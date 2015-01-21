@@ -10,4 +10,15 @@
 
 @interface Parent : NSObject
 
++(void) metodClasa;
+
+
+-(void) sayHallo;
+-(void) say:(NSString*) string;
+-(void) say:(NSString *)string and:(NSString*) string1;
+-(NSString*) say1;
+-(NSString*) say2;
+-(NSString*) say3;
+-(NSString*) say4;
+
 @end

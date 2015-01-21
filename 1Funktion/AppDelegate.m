@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Parent.h"
+#import "Child.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +17,30 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
+    
+    [Child metodClasa];
+    
+    Child* parent =[[Child alloc] init];
+    [parent sayHallo];
+    [parent say:@"How are you"];
+    [parent say:@"Jura" and:@"Halas"];
+    
+    
+    NSLog(@"%@",[parent say1]);
+    
+    NSLog(@"%@",[parent say3]);
+    
+   NSLog(@"%@",[parent say4]);
+    
+    
+    
     return YES;
 }
 

@@ -10,4 +10,18 @@
 
 @implementation Child
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        NSLog(@"Instance of child class is created");
+    }
+    return self;
+}
+
+-(NSString*) say1{
+    return [super say2];
+}
 @end
+
+

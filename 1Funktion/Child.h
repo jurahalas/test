@@ -10,4 +10,6 @@
 
 @interface Child : Parent
 
+-(NSString*) say1;
+
 @end
